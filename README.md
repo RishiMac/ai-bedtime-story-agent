@@ -6,6 +6,27 @@ The system transforms a simple user request into a safe, engaging, and developme
 
 ---
 
+## Quick Start/Setup
+
+### 1. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+### 2. Set your API key
+
+Create a `.env` file:
+
+```text
+OPENAI_API_KEY=your_key_here
+```
+### 3. Run the program
+
+```bash
+python3 main.py
+```
+---
+
 ## Overview
 
 The goal of this system is not just to generate a story, but to ensure **quality, safety, and consistency** through a multi-step pipeline.
@@ -18,6 +39,7 @@ Key features:
 - Automatic revision loop if quality thresholds are not met  
 - Optional user-driven refinement for iterative improvements  
 
+This system mirrors real-world AI agent pipelines by separating generation, evaluation, and refinement into distinct components.
 ---
 
 ## System Architecture
@@ -165,24 +187,6 @@ System Behavior:
 - Selected the highest-scoring story (9.8/10)  
 - Supported user refinement request:  
   "Make it shorter, cozier, and a little funnier"  
-
----
-
-## Setup
-
-### 1. Install dependencies
-
-pip install -r requirements.txt
-
-### 2. Set your API key
-
-Create a `.env` file:
-
-OPENAI_API_KEY=your_key_here
-
-### 3. Run the program
-
-python main.py
 
 ---
 
